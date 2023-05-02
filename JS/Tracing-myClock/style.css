@@ -1,0 +1,21 @@
+body{
+    background: #000;
+    font-size: 100%;
+}
+.clock{
+    margin: 25vh auto;
+    text-align: center;
+    color: #17D4FE;
+    font-family: "Orbitron", sans-serif;
+    font-size: 10rem;
+    letter-spacing: 7px;
+}
+
+@media screen and (max-width: 600px){
+    .clock{
+        margin: 40% auto;
+        font-size: 2rem;
+    }
+    
+
+}

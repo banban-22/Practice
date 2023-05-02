@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+
+.content{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 100px auto;
+}
+.title{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+.flex{
+    display: flex;
+}
+.flex .left{
+    width: 40%;
+}
+.flex .right{
+    width: 60%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.flex .right li{
+    width: calc(100%/3);
+    padding-left: 12px;
+}
+
+/*------------------------------------
+SP
+------------------------------------*/
+@media screen and (max-width: 900px){
+    .flex{
+        flex-direction: column;
+    }
+    .flex .left{
+        width: 100%;
+        padding-bottom: 12px;
+    }
+    .flex .right{
+        width: 100%;
+    }
+    .flex .right li{
+        width: 50%;
+        padding: 0 0 12px 0;
+    }
+    .flex .right li:nth-child(odd){
+        padding-right: 6px;
+    }
+    .flex .right li:nth-child(even){
+        padding-left: 6px;
+    }
+}

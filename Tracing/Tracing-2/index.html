@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tracing 2</title>
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. ">
+        <meta name="viewport" content="width=device-width" initial-scale-1>
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="image/logo.svg" alt="logo">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                 <li>
+                     <a href="#about">About</a>
+                 </li>
+                 <li>
+                    <a href="#works">Works</a>
+                 </li>
+                 <li>
+                    <a href="#news">News</a>
+                 </li>
+                 <li>
+                    <a href="#contact">Contact</a>
+                 </li>
+                 <li>
+                    <a href="https://www.instagram.com/">
+                        <img class="icon" src="image/icon-instagram.png" alt="instagram">
+                    </a>
+                 </li>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="mainvisual">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="image/mainvisual-sp.jpg">
+                    <img src="image/mainvisual-pc.jpg" alt="mainvisual">
+                    </picture>
+            </div>
+
+            <section id="about" class="wrapper">
+                <h2 class="section-title">About</h2>
+                <ul>
+                    <li>Ayaka Bando</li>
+                    <li>2nd Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                    <li>tel: 000-000-0000</li>
+                    <li>URL: www.xxxxxxx.jp</li>
+                    <li>email: aaa@gmail.com</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+            </section>
+
+            <section id="works" class="wrapper">
+                <h2 class="section-title">Works</h2>
+                <ul>
+                    <li>
+                        <img src="image/works1.jpg" alt="work-1">
+                    </li>
+                    <li>
+                        <img src="image/works2.jpg" alt="work-2">
+                    </li>
+                    <li>
+                        <img src="image/works3.jpg" alt="work-3">
+                    </li>
+                    <li>
+                        <img src="image/works4.jpg" alt="work-4">
+                    </li>
+                    <li>
+                        <img src="image/works5.jpg" alt="work-5">
+                    </li>
+                    <li>
+                        <img src="image/works6.jpg" alt="work-6">
+                    </li>
+                </ul>
+            </section>
+            <section id="news" class="wrapper">
+                <h2 class="section-title">News</h2>
+                <dl>
+                    <dt>2020.xx.xx</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+                    <dt>2020.xx.xx</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+                    <dt>2020.xx.xx</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+                    <dt>2020.xx.xx</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+                    <dt>2020.xx.xx</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit</dd>
+                </dl>
+            </section>
+            <section id="contact" class="wrapper">
+                <h2 class="section-title">Contact</h2>
+                <form action="#" method="post">
+                    <dl>
+                        <dt>
+                            <label for="name">NAME</label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="name" name="your-name">
+                        </dd>
+                        <dt>
+                            <label for="email">E-MAIL</label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="email" name="your-email">
+                        </dd>
+                        <dt>
+                            <label for="message">MESSAGE</label>
+                        </dt>
+                        <dd>
+                            <textarea id="message" name="your-message"></textarea>
+                        </dd>
+                    </dl>
+                    <div class="button">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2020 My Work</p>
+        </footer>
+    </body>

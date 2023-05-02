@@ -1,0 +1,31 @@
+:root{
+    --grey: #bfbfbf;
+    --white: #fff;
+}
+body{
+    font-family: 'Courier', sans-serif;
+    font-size: 100%;
+    color: var(--grey);
+    width: 100%;
+}
+#button{
+    display: block;
+    text-align: center;
+    margin: 20rem auto;
+    cursor: pointer;
+    border: 2px solid var(--grey);
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+}
+#button:hover{
+    border: 2px solid var(--grey);
+    color: var(--white);
+    background-color: var(--grey);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+#button:active{
+    box-shadow: none;
+    transform: translate3D(4px, 4px, 0);
+}

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+ul{
+    list-style: none;
+}
+
+.content{
+    width: 100%;
+}
+#slide{
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slide .prev,
+#slide .next{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+    position: absolute;
+    top: 45%;
+    transition: 0.5s;
+    z-index: 10;
+}
+#slide .prev:hover,
+#slide .next:hover{
+    opacity: 0.7;
+}
+#slide .prev::before,
+#slide .prev::after,
+#slide .next::before,
+#slide .next::after{
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+}
+
+#slide .prev{
+    left: 0;
+}
+#slide .prev::before,
+#slide .prev::after{
+    left: 12px;
+}
+#slide .prev:before{
+    top: 37%;
+    transform: rotate(-45deg);
+}
+#slide .prev:after{
+    bottom: 37%;
+    transform: rotate(45deg);
+}
+
+#slide .next{
+    right: 0;
+}
+#slide .next::before,
+#slide .next::after{
+    right: 12px;
+}
+#slide .next:before{
+    top: 37%;
+    transform: rotate(45deg);
+}
+#slide .next:after{
+    bottom: 37%;
+    transform: rotate(-45deg);
+}
+
+/*-------------------------------
+SP
+-------------------------------*/
+@media screen and (max-width: 900px){
+    #slide .prev,
+    #slide .next{
+        top: 48%;
+    }
+}

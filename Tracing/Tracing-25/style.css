@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+ul{
+    list-style: none;
+}
+
+.content{
+    width: 100%;
+    padding: 60px 30px 0px 30px;
+}
+#slick{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#slick .slick-next::before,
+#slick .slick-prev::before{
+    color: #000;
+}

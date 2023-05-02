@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <Title>Tracing 27</Title>
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <h2 class="title">セミナーお申し込みフォーム</h2>
+
+            <form action="#">
+                <dl class="form-area">
+                    <dt>
+                        <label for="name">名前</label>
+                        <span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="text" id="name" name="your-name">
+                        <p id="name-error" class="error-text"></p>
+                    </dd>
+
+                    <dt>
+                        <label for="tell">電話番号</label>
+                        <span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="text" id="tell1" name="your-tell1"> - 
+                        <input type="text" id="tell2" name="your-tell2"> - 
+                        <input type="text" id="tell3" name="your-tell3">
+                        <p id="tell-error" class="error-text"></p>
+                    </dd>
+
+                    <dt>
+                        <label for="reservation">予約日</label>
+                        <span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="text" id="reservation" name="your-reservation"> 13:00 - 14:00
+                        <p id="reservation-error" class="error-text"></p>
+                    </dd>
+
+                    <dt>
+                        受講形式
+                        <span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="radio" id="online" class="lesson" name="your-lesson" value="online" checked>
+                        <label for="online">オンラインで受講</label><br>
+                        <input type="radio" id="venue" class="lesson" name="your-lesson" value="venue">
+                        <label for="venue">会場で受講</label>
+                        <p id="lesson-error" class="error-text"></p>
+                    </dd>
+                </dl>
+
+                <div class="note-online">
+                    <p>
+                        当日はオンライン会場システムを使用いたします。<br>
+                        ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。<br>
+                        参加方法に関しては、前日までに別途ご案内を差し上げます。
+                    </p>
+                </div>
+
+                <div class="note-venue">
+                    <p>
+                        【会場情報】<br>
+                        会場：代々木GIプラザ3F Room1<br>
+                        住所：〒151-0053　東京都渋谷区代々木1-1-1<br>
+                        電話番号：00-0000-0000
+                    </p>
+                </div>
+
+                <div class="button-area">
+                    <button id="submit-button" type="button" value="">上記の内容で申し込む</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

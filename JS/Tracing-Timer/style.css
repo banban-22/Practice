@@ -1,0 +1,57 @@
+/*------------------------------
+variables
+------------------------------*/
+:root{
+--orange: #ffa600;
+--grey: #f3f3f3;
+--white: #fff;
+--based-orange: var(--orange);
+--transition: all 0.5s ease-in-out;
+}
+
+/*------------------------------
+Contents
+------------------------------*/
+body{
+    background: var(--based-orange);
+    color: var(--white);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    height: 100%;
+}
+.wrapper{
+    width: 800px;
+    margin: 30px auto;
+    color: var(--white);
+    text-align: center;
+}
+h1,
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#seconds,
+#tens,
+p{
+    font-size: 10rem;
+}
+button{
+    border-radius: 10px;
+    background: var(--based-orange);
+    color: var(--white);
+    border: solid 1px var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 4rem;
+    padding: 18px 10px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 4px 4px var(--grey);
+}
+button:hover{
+    transition: var(--transition);
+    background: var(--white);
+    border: solid 1px var(--white);
+    color: var(--based-orange);
+}
